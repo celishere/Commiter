@@ -1,0 +1,1 @@
+export type Hideable<B> = B & { hide: boolean }
