@@ -34,11 +34,18 @@ app.post("*", async (req: Request, res: Response) => {
     const payload = req.body as Payload;
 
     if (payload && payload.repository && payload.commits) {
-        const { text, keyboard } = await generate(payload)
+        try {
+            const { text, keyboard } = await generate(payload)
 
-        await bot.telegram.sendMessage(CHAT_ID, text, keyboard)
+            await bot.telegram.sendMessage(CHAT_ID, text, {
+                parse_mode: "Markdown",
+                ...keyboard
+            })
 
-        logger.info(`Sent commit: \n\n${text}`)
+            logger.info(`Sent commit: \n\n${text}`)
+        } catch (e) {
+            logger.error(e)
+        }
     }
 
     res.end("OK")
