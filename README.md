@@ -108,7 +108,7 @@ Telegram bot that sends new commits from GitHub with statistics to the chat
 <br/>
 <h3>IMPORTANT!</h2>
 
-    ``If you want to create a token for an organization, then you need to enable this feature in the organization settings.``
+    If you want to create a token for an organization, then you need to enable this feature in the organization settings.
     <br/>
     <br/>
     <details>
