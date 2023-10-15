@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  github_stats:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: github_stats_image
+    container_name: github_stats
+    ports:
+      - "3925:3925"
