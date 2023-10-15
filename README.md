@@ -105,21 +105,18 @@ Telegram bot that sends new commits from GitHub with statistics to the chat
 2. Go to ``Fine-grained tokens`` section
 3. Click on ``Generate new token`` button
 4. Create a new token.
-<br/>
-<h3>IMPORTANT!</h2>
 
-    If you want to create a token for an organization, then you need to enable this feature in the organization settings.
-    <br/>
-    <br/>
-    <details>
+### IMPORTANT!
+   If you want to create a token for an organization, then you need to enable this feature in the organization settings.
+
+<details>
         <summary>Show details</summary>
         <a>https://github.com/organizations/YOUR_ORGANISATION/settings/personal-access-tokens</a>
         <br/>
         <br/>
-        <img width="1000" height="340" src="media/api_3.png" alt="title">
-   
-        Then, select in 'Resource Owner'
-    </details>
+        <img width="1000" height="300" src="media/api_3.png" alt="title">
+        <p>Then, select in 'Resource Owner' your organisation</p>
+</details>
 
 # Docker
 
